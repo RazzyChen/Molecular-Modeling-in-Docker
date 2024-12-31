@@ -1,6 +1,6 @@
 # Molecular Dynamics Docker Environment
 
-This repository contains a Dockerfile for building a molecular dynamics simulation and Quantum chemistry environment with CUDA support. The container includes various tools for molecular modeling, analysis, and visualization and X11 forwarding configured.
+This repository contains a Dockerfile for building a molecular dynamics simulation and quantum chemistry base environment with CUDA support. The container includes various tools for molecular modeling, analysis, and visualization and X11 forwarding configured.
 
 ## Included Software
 
