@@ -1,13 +1,13 @@
 # Molecular Dynamics Docker Environment
 
-This repository contains a Dockerfile for building a comprehensive molecular dynamics simulation environment with CUDA support. The container includes various tools for molecular modeling, analysis, and visualization.
+This repository contains a Dockerfile for building a molecular dynamics simulation and Quantum chemistry environment with CUDA support. The container includes various tools for molecular modeling, analysis, and visualization and X11 forwarding configured.
 
 ## Included Software
 
 - **GROMACS 2023.5**: Molecular dynamics package with CUDA support
 - **AutoDock Vina 1.2.5**: Molecular docking program
-- **Multiwfn 3.8**: Wavefunction analysis tool
-- **Sobtop**: Molecular topology tool
+- **Multiwfn 3.8**: Wavefunction analysis tool by Dr. Tian Lu (Contact: sobereva[at]sina.com. Beijing Kein Research Center for Natural Sciences 北京科音自然科学研究中心)
+- **Sobtop**: Molecular topology tool by Dr. Tian Lu (Contact: sobereva[at]sina.com. Beijing Kein Research Center for Natural Sciences 北京科音自然科学研究中心)
 - **Avogadro 2**: Advanced molecular editor
 - **xTB 6.7.1**: Semi-empirical quantum chemistry package
 - **MGLTools 1.5.7**: Molecular graphics tools
