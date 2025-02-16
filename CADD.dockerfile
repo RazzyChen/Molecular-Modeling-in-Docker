@@ -1,10 +1,10 @@
 # Use NVIDIA HPC SDK as the base image
-FROM nvcr.io/nvidia/cuda:12.6.3-cudnn-devel-ubuntu22.04
+FROM nvcr.io/nvidia/cuda:12.8.0-cudnn-devel-ubuntu24.04
 
 # Set environment variables for user configuration and software versions
 ENV USER_NAME=cadd \
-    GROMACS_VERSION=2023.5 \
-    MAKEFLAGS="-j 4" \
+    GROMACS_VERSION=2025.0 \
+    MAKEFLAGS="-j 12" \
     FFTW_VERSION=3.3.10
 
 # Set display for GUI applications
