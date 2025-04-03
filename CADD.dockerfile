@@ -1,5 +1,5 @@
 # Use NVIDIA HPC SDK as the base image
-FROM nvcr.io/nvidia/cuda:12.8.0-cudnn-devel-ubuntu24.04
+FROM nvcr.io/nvidia/cuda:12.8.0-cudnn-devel-ubuntu22.04
 
 # Set environment variables for user configuration and software versions
 ENV USER_NAME=cadd \
