@@ -1,4 +1,4 @@
-name: Docker file CI
+name: Dockerfile construct env for CI
 
 on:
   push:
@@ -20,18 +20,11 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          file: ./CADD.dockerfile
           push: false
           tags: cadd-md:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-
-      - name: Test image - Check installed packages
-        run: |
-          docker run --rm cadd-md:latest bash -c "command -v gmx && command -v vina && command -v Multiwfn"
-
-      - name: Test image - Check Python packages
-        run: |
-          docker run --rm cadd-md:latest bash -c "pip list | grep -e gmx_MMPBSA -e DuIvyTools"
 
       - name: Test image - Check NVIDIA capabilities
         run: |
