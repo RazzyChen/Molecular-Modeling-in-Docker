@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/cuda:12.8.0-cudnn-devel-ubuntu22.04
 
 # Set environment variables for user configuration and software versions
 ENV USER_NAME=cadd \
-    GROMACS_VERSION=2024.6 \
+    GROMACS_VERSION=2024.5 \
     MAKEFLAGS="-j 12" \
     FFTW_VERSION=3.3.10
 
